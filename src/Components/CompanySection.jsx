@@ -4,8 +4,8 @@ const CompanySection = () => {
                 return (
                                 <div>
 
-                                                <h1 className='text-red-600'>Company Portal</h1>
-                                                <p>These companies are relevent with their job portal posts.Make sure your category and apply for the desire one.</p>
+                                                <h1 className='text-4xl font-bold text-red-600 text-center'>Company Portal</h1>
+                                                <p className='text-gray-600 mb-12 text-center'>These companies are relevent with their job portal posts.Make sure your category and apply for the desire one.</p>
                                          {/* <div className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 w-full max-w-2xl">
       Image
       <img

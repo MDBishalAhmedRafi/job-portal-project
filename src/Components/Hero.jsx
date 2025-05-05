@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
                 return (
-                                <div className='lg:w-11/12 lg:mx-auto mx-2'>
+                                <div className=''>
                                      <div
   className="hero min-h-screen"
   style={{
