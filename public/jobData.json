@@ -1,0 +1,198 @@
+[
+                {
+                  "id": "1",
+                  "name": "GreenLogix",
+                  "logo": "https://via.placeholder.com/100x100.png?text=GreenLogix",
+                  "location": "Remote",
+                  "website": "https://greenlogix.com",
+                  "industry": "Healthcare",
+                  "jobs": [
+                    {
+                      "id": "7bfa1bb1-5c6a-412f-ae8f-1a3104e33838",
+                      "title": "DevOps Engineer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=DevOps+Engineer",
+                      "location": "Chicago, IL",
+                      "salary": "$67k - $124k",
+                      "jobType": "Remote",
+                      "description": "Lead a small team of developers in agile workflows.",
+                      "requirements": [
+                        "Understanding of CI/CD pipelines",
+                        "Strong knowledge of Node.js and Express",
+                        "Experience with React or Vue.js",
+                        "Familiarity with RESTful APIs",
+                        "Proficient in HTML, CSS, and JavaScript"
+                      ]
+                    },
+                    {
+                      "id": "dc161b04-bd04-4026-b3ec-455bdb92dfb5",
+                      "title": "Project Manager",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Project+Manager",
+                      "location": "San Francisco, CA",
+                      "salary": "$95k - $143k",
+                      "jobType": "Contract",
+                      "description": "Join a collaborative team to build scalable applications.",
+                      "requirements": [
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Familiarity with RESTful APIs",
+                        "Strong knowledge of Node.js and Express",
+                        "Excellent problem-solving skills",
+                        "Proficient in HTML, CSS, and JavaScript"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "name": "TechNova",
+                  "logo": "https://via.placeholder.com/100x100.png?text=TechNova",
+                  "location": "Remote",
+                  "website": "https://technova.com",
+                  "industry": "Cybersecurity",
+                  "jobs": [
+                    {
+                      "id": "0e432c66-f70e-4650-a337-f68f1981b2c3",
+                      "title": "Frontend Developer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Frontend+Developer",
+                      "location": "Chicago, IL",
+                      "salary": "$94k - $145k",
+                      "jobType": "Part-time",
+                      "description": "Join a collaborative team to build scalable applications.",
+                      "requirements": [
+                        "Familiarity with RESTful APIs",
+                        "Excellent problem-solving skills",
+                        "Good understanding of responsive design",
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Experience with React or Vue.js"
+                      ]
+                    },
+                    {
+                      "id": "0b587f0b-9a77-45fc-b365-45d93fef9f2d",
+                      "title": "Product Manager",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Product+Manager",
+                      "location": "Boston, MA",
+                      "salary": "$95k - $121k",
+                      "jobType": "Part-time",
+                      "description": "Join a collaborative team to build scalable applications.",
+                      "requirements": [
+                        "Strong knowledge of Node.js and Express",
+                        "Understanding of CI/CD pipelines",
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Experience with React or Vue.js",
+                        "Proficient in HTML, CSS, and JavaScript"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "name": "EcoBuild",
+                  "logo": "https://via.placeholder.com/100x100.png?text=EcoBuild",
+                  "location": "Remote",
+                  "website": "https://ecobuild.com",
+                  "industry": "Finance",
+                  "jobs": [
+                    {
+                      "id": "8d8bc3c2-36d4-470a-b2d0-6f5b05e3b225",
+                      "title": "QA Tester",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=QA+Tester",
+                      "location": "Remote",
+                      "salary": "$98k - $141k",
+                      "jobType": "Remote",
+                      "description": "Help design and develop new features and services.",
+                      "requirements": [
+                        "Good understanding of responsive design",
+                        "Experience with React or Vue.js",
+                        "Proficient in HTML, CSS, and JavaScript",
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Familiarity with RESTful APIs"
+                      ]
+                    },
+                    {
+                      "id": "7230c3f7-9c4f-46cc-b4b0-d315a9cecf73",
+                      "title": "Backend Engineer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Backend+Engineer",
+                      "location": "Boston, MA",
+                      "salary": "$103k - $156k",
+                      "jobType": "Contract",
+                      "description": "Help design and develop new features and services.",
+                      "requirements": [
+                        "Good understanding of responsive design",
+                        "Familiarity with RESTful APIs",
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Experience with React or Vue.js",
+                        "Excellent problem-solving skills"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4",
+                  "name": "CyberCore",
+                  "logo": "https://via.placeholder.com/100x100.png?text=CyberCore",
+                  "location": "New York, NY",
+                  "website": "https://cybercore.com",
+                  "industry": "Education",
+                  "jobs": [
+                    {
+                      "id": "26d7b6ee-93b3-42cb-8d25-ea180cd94c15",
+                      "title": "DevOps Engineer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=DevOps+Engineer",
+                      "location": "Remote",
+                      "salary": "$99k - $121k",
+                      "jobType": "Remote",
+                      "description": "Lead a small team of developers in agile workflows.",
+                      "requirements": [
+                        "Understanding of CI/CD pipelines",
+                        "Strong knowledge of Node.js and Express",
+                        "Excellent problem-solving skills",
+                        "Experience with React or Vue.js",
+                        "Experience with database systems like PostgreSQL or MongoDB"
+                      ]
+                    },
+                    {
+                      "id": "ad8e3a4e-b373-437a-b6e1-820a74f2d142",
+                      "title": "Product Manager",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Product+Manager",
+                      "location": "Seattle, WA",
+                      "salary": "$64k - $134k",
+                      "jobType": "Part-time",
+                      "description": "Work on cutting-edge projects with modern tech stacks.",
+                      "requirements": [
+                        "Proficient in HTML, CSS, and JavaScript",
+                        "Experience with database systems like PostgreSQL or MongoDB",
+                        "Strong knowledge of Node.js and Express",
+                        "Understanding of CI/CD pipelines",
+                        "Experience with React or Vue.js"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5",
+                  "name": "FinEdge",
+                  "logo": "https://via.placeholder.com/100x100.png?text=FinEdge",
+                  "location": "San Francisco, CA",
+                  "website": "https://finedge.com",
+                  "industry": "Logistics",
+                  "jobs": [
+                    {
+                      "id": "7e83cf12-f65d-44f0-9c30-8acdd3245d83",
+                      "title": "Frontend Developer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Frontend+Developer",
+                      "location": "Chicago, IL",
+                      "salary": "$91k - $141k",
+                      "jobType": "Remote",
+                      "description": "Work on cutting-edge projects with modern tech stacks.",
+                      "requirements": [
+                        "Proficient in HTML, CSS, and JavaScript",
+                        "Familiarity with RESTful APIs",
+                        "Strong knowledge of Node.js and Express",
+                        "Experience with React or Vue.js",
+                        "Understanding of CI/CD pipelines"
+                      ]
+                    }
+                  ]
+                }
+              ]
+
+              
