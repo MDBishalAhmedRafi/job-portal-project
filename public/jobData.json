@@ -1,16 +1,17 @@
 [
                 {
                   "id": "1",
-                  "name": "GreenLogix",
-                  "logo": "https://i.ibb.co.com/q3Pxv635/cb901c6392512c9186cd55caf5e00d5f-1.jpg",
+                  "name": "NIKE",
+                  "logo": "https://i.ibb.co.com/93T1Dvx8/nike.png",
                   "location": "Remote",
-                  "website": "https://greenlogix.com",
+                  "website": "https://www.nike.com/",
                   "industry": "Healthcare",
+                  "description": "Nike is a globally recognized sportswear and lifestyle brand known for its innovative athletic footwear, apparel, and accessories. Founded in 1964, the company has become a symbol of performance, motivation, and style. Nike operates by designing and marketing high-quality products for a wide range of sports and everyday use, often collaborating with top athletes and influencers. Its iconic Swoosh logo and Just Do It slogan have become part of popular culture. Through a mix of cutting-edge technology, strategic marketing, and global distribution, Nike continues to lead the industry and inspire millions around the world.",
                   "jobs": [
                     {
                       "id": "7bfa1bb1-5c6a-412f-ae8f-1a3104e33838",
                       "title": "DevOps Engineer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=DevOps+Engineer",
+                      "bannerImage": "https://i.ibb.co.com/zV5DKzFh/banar8.jpg",
                       "location": "Chicago, IL",
                       "salary": "$67k - $124k",
                       "jobType": "Remote",
@@ -26,7 +27,7 @@
                     {
                       "id": "dc161b04-bd04-4026-b3ec-455bdb92dfb5",
                       "title": "Project Manager",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Project+Manager",
+                      "bannerImage": "https://i.ibb.co.com/cXsSvGs1/banar5.jpg",
                       "location": "San Francisco, CA",
                       "salary": "$95k - $143k",
                       "jobType": "Contract",
@@ -43,16 +44,17 @@
                 },
                 {
                   "id": "2",
-                  "name": "TechNova",
-                  "logo": "https://i.ibb.co.com/cXCSC7nt/company-logo-design-template-037c771252ad52003a69480a5da6720e-screen.jpg",
+                  "name": "ADIDAS",
+                  "logo": "https://i.ibb.co.com/BV6KMM27/Adidas.png",
                   "location": "Remote",
-                  "website": "https://technova.com",
+                  "website": "https://www.adidas.com/us",
                   "industry": "Cybersecurity",
+                  "description": "Adidas is a global sportswear brand headquartered in Germany, recognized for its performance-driven shoes, clothing, and accessories. The brand combines athletic function with streetwear style and is famous for its three-stripe logo. Adidas frequently partners with athletes, designers, and celebrities to create impactful collaborations.",
                   "jobs": [
                     {
                       "id": "0e432c66-f70e-4650-a337-f68f1981b2c3",
                       "title": "Frontend Developer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Frontend+Developer",
+                      "bannerImage": "https://i.ibb.co.com/9Hzr437K/banar7.jpg",
                       "location": "Chicago, IL",
                       "salary": "$94k - $145k",
                       "jobType": "Part-time",
@@ -68,7 +70,7 @@
                     {
                       "id": "0b587f0b-9a77-45fc-b365-45d93fef9f2d",
                       "title": "Product Manager",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Product+Manager",
+                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar3.jpg",
                       "location": "Boston, MA",
                       "salary": "$95k - $121k",
                       "jobType": "Part-time",
@@ -85,16 +87,17 @@
                 },
                 {
                   "id": "3",
-                  "name": "EcoBuild",
-                  "logo": "https://i.ibb.co.com/vCGwhCfG/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3-screen.jpg",
+                  "name": "GOOGLE",
+                  "logo": "https://i.ibb.co.com/JjCT7xb0/google.png",
                   "location": "Remote",
                   "website": "https://ecobuild.com",
                   "industry": "Finance",
+                  "description": "Google is the world’s leading search engine and a dominant force in internet services and digital technology. Known for products like Gmail, Google Maps, YouTube, and Android, it plays a central role in everyday digital life. Google is also a pioneer in artificial intelligence, cloud computing, and smart technologies.",
                   "jobs": [
                     {
                       "id": "8d8bc3c2-36d4-470a-b2d0-6f5b05e3b225",
                       "title": "QA Tester",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=QA+Tester",
+                      "bannerImage": "https://i.ibb.co.com/cXsSvGs1/banar5.jpg",
                       "location": "Remote",
                       "salary": "$98k - $141k",
                       "jobType": "Remote",
@@ -110,7 +113,7 @@
                     {
                       "id": "7230c3f7-9c4f-46cc-b4b0-d315a9cecf73",
                       "title": "Backend Engineer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Backend+Engineer",
+                      "bannerImage": "https://i.ibb.co.com/HLPwC6Tm/banar6.jpg",
                       "location": "Boston, MA",
                       "salary": "$103k - $156k",
                       "jobType": "Contract",
@@ -127,16 +130,17 @@
                 },
                 {
                   "id": "4",
-                  "name": "CyberCore",
-                  "logo": "https://i.ibb.co.com/xqmCpvdF/depositphotos-75333451-stock-photo-abstract-geometric-company-logo.webp",
+                  "name": "MICROSOFT",
+                  "logo": "https://i.ibb.co.com/DfqN6mr0/micro.png",
                   "location": "New York, NY",
-                  "website": "https://cybercore.com",
+                  "website": "https://www.microsoft.com/en-us/",
                   "industry": "Education",
+                  "description": "Microsoft is a multinational technology company known for its Windows operating system, Microsoft Office, and cloud platform Azure. It is a major player in both consumer and enterprise software. Microsoft also owns LinkedIn, GitHub, and Xbox, contributing to its influence in professional networking, development tools, and gaming.",
                   "jobs": [
                     {
                       "id": "26d7b6ee-93b3-42cb-8d25-ea180cd94c15",
                       "title": "DevOps Engineer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=DevOps+Engineer",
+                      "bannerImage": "https://i.ibb.co.com/CpF76zgQ/banar4.jpg",
                       "location": "Remote",
                       "salary": "$99k - $121k",
                       "jobType": "Remote",
@@ -152,7 +156,7 @@
                     {
                       "id": "ad8e3a4e-b373-437a-b6e1-820a74f2d142",
                       "title": "Product Manager",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Product+Manager",
+                      "bannerImage": "https://i.ibb.co.com/YrgNB76/banar1.jpg",
                       "location": "Seattle, WA",
                       "salary": "$64k - $134k",
                       "jobType": "Part-time",
@@ -169,16 +173,17 @@
                 },
                 {
                   "id": "5",
-                  "name": "FinEdge",
-                  "logo": "https://i.ibb.co.com/hx90Lsgk/pngtree-growth-business-company-logo-png-image-728232.jpg",
+                  "name": "AMAZON",
+                  "logo": "https://i.ibb.co.com/9Hjr5m7n/amazone.png",
                   "location": "San Francisco, CA",
-                  "website": "https://finedge.com",
+                  "website": "https://www.amazon.com/",
                   "industry": "Logistics",
+                  "description": "Amazon is one of the world’s largest e-commerce and cloud computing companies. Known for its massive online marketplace, fast delivery services, and customer-centric approach, Amazon has transformed how people shop. It also leads in cloud services through AWS (Amazon Web Services), making it a powerhouse in both retail and technology sectors.",
                   "jobs": [
                     {
                       "id": "7e83cf12-f65d-44f0-9c30-8acdd3245d83",
                       "title": "Frontend Developer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Frontend+Developer",
+                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar3.jpg",
                       "location": "Chicago, IL",
                       "salary": "$91k - $141k",
                       "jobType": "Remote",
@@ -195,16 +200,17 @@
                 },
                 {
                   "id": "6",
-                  "name": "CloudWare Systems",
-                  "logo": "https://i.ibb.co.com/wZf96qKg/images-1.jpg",
+                  "name": "SAMSUNG",
+                  "logo": "https://i.ibb.co.com/LdGH5rt5/samsung.png",
                   "location": "Austin, TX",
-                  "website": "https://cloudwaresystems.com",
+                  "website": "https://www.samsung.com/us/",
                   "industry": "Cloud Computing",
+                  "description": "Samsung is a South Korean multinational corporation known for its cutting-edge consumer electronics, including smartphones, televisions, and home appliances. It is a global leader in technology, with its Galaxy product line standing out in the mobile market. Samsung emphasizes innovation, quality, and sleek design across all its products.",
                   "jobs": [
                     {
                       "id": "af47e125-2024-43ff-9f8c-4b51481d6d77",
                       "title": "Cloud Solutions Architect",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Cloud+Solutions+Architect",
+                      "bannerImage": "https://i.ibb.co.com/YrgNB76/banar1.jpg",
                       "location": "Austin, TX",
                       "salary": "$130k - $180k",
                       "jobType": "Full-time",
@@ -220,7 +226,7 @@
                     {
                       "id": "c1d6edc3-23e4-4b67-9ed6-13a5c23f2064",
                       "title": "Backend Developer",
-                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Backend+Developer",
+                      "bannerImage": "https://i.ibb.co.com/CKzRxphv/banar2.jpg",
                       "location": "Remote",
                       "salary": "$90k - $135k",
                       "jobType": "Remote",
