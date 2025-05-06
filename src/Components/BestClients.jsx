@@ -7,7 +7,7 @@ import client4 from ".././assets/girl1.jpg"
 import client5 from ".././assets/girl2..jpg"
 const BestClients = () => {
   return (
-    <div className="lg:w-11/12 lg:mx-auto bg-[#2eba6e] lg:p-4 p-2 rounded-2xl">
+    <div className=" bg-[#2eba6e] lg:p-4 p-2 rounded-2xl">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-red-600">Our Happy Clients</h1>
         <p className="text-gray-600 mb-7 text-center">

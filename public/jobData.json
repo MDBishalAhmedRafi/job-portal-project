@@ -2,7 +2,7 @@
                 {
                   "id": "1",
                   "name": "GreenLogix",
-                  "logo": "https://via.placeholder.com/100x100.png?text=GreenLogix",
+                  "logo": "https://i.ibb.co.com/q3Pxv635/cb901c6392512c9186cd55caf5e00d5f-1.jpg",
                   "location": "Remote",
                   "website": "https://greenlogix.com",
                   "industry": "Healthcare",
@@ -44,7 +44,7 @@
                 {
                   "id": "2",
                   "name": "TechNova",
-                  "logo": "https://via.placeholder.com/100x100.png?text=TechNova",
+                  "logo": "https://i.ibb.co.com/cXCSC7nt/company-logo-design-template-037c771252ad52003a69480a5da6720e-screen.jpg",
                   "location": "Remote",
                   "website": "https://technova.com",
                   "industry": "Cybersecurity",
@@ -86,7 +86,7 @@
                 {
                   "id": "3",
                   "name": "EcoBuild",
-                  "logo": "https://via.placeholder.com/100x100.png?text=EcoBuild",
+                  "logo": "https://i.ibb.co.com/vCGwhCfG/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3-screen.jpg",
                   "location": "Remote",
                   "website": "https://ecobuild.com",
                   "industry": "Finance",
@@ -128,7 +128,7 @@
                 {
                   "id": "4",
                   "name": "CyberCore",
-                  "logo": "https://via.placeholder.com/100x100.png?text=CyberCore",
+                  "logo": "https://i.ibb.co.com/xqmCpvdF/depositphotos-75333451-stock-photo-abstract-geometric-company-logo.webp",
                   "location": "New York, NY",
                   "website": "https://cybercore.com",
                   "industry": "Education",
@@ -170,7 +170,7 @@
                 {
                   "id": "5",
                   "name": "FinEdge",
-                  "logo": "https://via.placeholder.com/100x100.png?text=FinEdge",
+                  "logo": "https://i.ibb.co.com/hx90Lsgk/pngtree-growth-business-company-logo-png-image-728232.jpg",
                   "location": "San Francisco, CA",
                   "website": "https://finedge.com",
                   "industry": "Logistics",
@@ -192,7 +192,50 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "6",
+                  "name": "CloudWare Systems",
+                  "logo": "https://i.ibb.co.com/wZf96qKg/images-1.jpg",
+                  "location": "Austin, TX",
+                  "website": "https://cloudwaresystems.com",
+                  "industry": "Cloud Computing",
+                  "jobs": [
+                    {
+                      "id": "af47e125-2024-43ff-9f8c-4b51481d6d77",
+                      "title": "Cloud Solutions Architect",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Cloud+Solutions+Architect",
+                      "location": "Austin, TX",
+                      "salary": "$130k - $180k",
+                      "jobType": "Full-time",
+                      "description": "Design and implement scalable cloud infrastructure.",
+                      "requirements": [
+                        "Hands-on experience with AWS or Azure",
+                        "Knowledge of microservices and containerization (Docker/Kubernetes)",
+                        "Strong scripting skills (Bash, Python)",
+                        "Experience with infrastructure as code (Terraform preferred)",
+                        "Excellent communication and leadership abilities"
+                      ]
+                    },
+                    {
+                      "id": "c1d6edc3-23e4-4b67-9ed6-13a5c23f2064",
+                      "title": "Backend Developer",
+                      "bannerImage": "https://via.placeholder.com/600x200.png?text=Backend+Developer",
+                      "location": "Remote",
+                      "salary": "$90k - $135k",
+                      "jobType": "Remote",
+                      "description": "Develop APIs and services for cloud applications.",
+                      "requirements": [
+                        "Strong knowledge of Node.js or Go",
+                        "Experience with PostgreSQL and MongoDB",
+                        "Understanding of event-driven architecture",
+                        "Proficient in writing scalable backend code",
+                        "Experience with CI/CD and unit testing"
+                      ]
+                    }
+                  ]
                 }
+                
               ]
 
               

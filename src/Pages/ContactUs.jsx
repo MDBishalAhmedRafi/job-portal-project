@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 const ContactUs = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can add logic to send the message here
+
+    // Clear the form fields
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+  };
                 return (
+                                <>
                                 <div className='bg-gray-100 lg:w-11/12 lg:mx-auto mx-2 rounded-2xl'>
 
 <div className=" p-8">
@@ -38,66 +63,60 @@ const ContactUs = () => {
           <div>
             <h4 className="font-semibold text-gray-800">Address:</h4>
             <p className="text-sm text-gray-600">
-              80/A Shajalal Complex Malibagh Square Dhaka-1217
+              80/A Shahjalal Complex Malibagh Square Dhaka-1217
             </p>
           </div>
         </div>
       </div>
     </div>
+     </div>
+        {/* form part */}
 
-    {/* form part */}
-
-    <div className="contact-form-container">
-      <h2 className="form-title">Get in Touch</h2>
-      
-      <form className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input 
-            type="text" 
-            id="name" 
-            className="form-input"
-            placeholder="Your name"
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input 
-            type="email" 
-            id="email" 
-            className="form-input"
-            placeholder="Your email"
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="subject">Subject:</label>
-          <input 
-            type="text" 
-            id="subject" 
-            className="form-input"
-            placeholder="Subject"
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea 
-            id="message" 
-            className="form-input textarea"
-            placeholder="Your message"
-            rows="5"
-          ></textarea>
-        </div>
-
-        <button type="submit" className="submit-btn">
+    <div className="lg:max-w-md lg:mx-auto p-6 bg-gray-100 rounded-2xl shadow-sm lg:mt-10 mt-5 mx-2">
+      <h2 className="text-2xl font-semibold text-gray-900 mb-2">Get in Touch</h2>
+      <div className="w-10 h-1 bg-green-600 mb-6"></div>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Name:"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none"
+        />
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Email:"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none"
+        />
+        <input
+          type="text"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
+          placeholder="Subject:"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none"
+        />
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Message"
+          rows="5"
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none"
+        />
+        <button
+          type="submit"
+          className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-md"
+        >
           Send Message
         </button>
       </form>
     </div>
-
-                                </div>
+                                </>
                 );
 };
 
