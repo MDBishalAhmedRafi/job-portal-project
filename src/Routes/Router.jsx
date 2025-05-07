@@ -9,6 +9,7 @@ import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import AuthLayout from "../Layouts/AuthLayout";
 import ErrorPage from "../Pages/ErrorPage";
+import Profile from "../Pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUs></ContactUs>,
+      },
+      { 
+        path: "/profile-page",
+        element: <Profile></Profile>
       },
       { 
         path: "/company-details/:name",

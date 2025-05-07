@@ -51,11 +51,12 @@ const Navbar = () => {
         <li><NavLink to="/jobs">Blogs</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/contact-us">Contact Us</NavLink></li>
+        {user ? <li><NavLink to="/profile-page">Profile</NavLink></li> : ""}
     </ul>
   </div>
   <div className="navbar-end space-x-3">
     <p>{user && user.email}</p>
-    <img src={user && user.photoURL} alt="" />
+    <Link to="/profile-page" className='cursor-pointer'><img src={user && user.photoURL} alt="" /></Link>
     { 
       user ? <button onClick={handleLogOut} className='btn'>Logout</button> : <Link to="/auth/login" className="btn">Login</Link>
     }

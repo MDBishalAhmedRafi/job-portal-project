@@ -4,7 +4,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 const Register = () => {
 
-  const {createUser, setUser, googleLogIn} = use(AuthContext);
+  const {createUser, setUser, googleLogIn, updateUser} = use(AuthContext);
 
   const handleRegister = (e) => { 
     e.preventDefault();
@@ -17,7 +17,14 @@ const Register = () => {
     createUser(email, password)
     .then(result=>{ 
       const user = result.user
-      setUser(user);
+      updateUser({displayName: name, photoURL: photo}).then(() => { 
+        setUser({...user, displayName: name, photoURL: photo});
+      })
+      .catch((error) => {
+        alert(error);
+        setUser(user);
+      });
+     
     })
     .catch((error) => {
       const errorCode = error.code;
