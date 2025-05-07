@@ -7,7 +7,7 @@ import { ToastContainer } from 'react-toastify';
 
 const MainLayout = () => {
                 return (
-                                <div className='space-y-9'>
+                                <div className=''>
                                    <ToastContainer/>
                                                 <header>
                                                                 <Navbar></Navbar>

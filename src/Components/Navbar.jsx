@@ -11,7 +11,7 @@ const Navbar = () => {
     logOut()
     .then(() => {
       // const handleDeleteToast = () => {
-        toast.warn('Lawyer Appointment has been deleted', {
+        toast.warn('User have Loged Out', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,

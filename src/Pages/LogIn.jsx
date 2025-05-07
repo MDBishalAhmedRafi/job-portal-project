@@ -1,12 +1,17 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate,  } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+// import { toast } from "react-toastify";
 
 const LogIn = () => {
+  const [error, setError] = useState("")
   const {logIn, googleLogIn} = use(AuthContext);
+  const location = useLocation();
   const navigate = useNavigate()
+  console.log(location)
+  // const navigate = useNavigate()
   const handleLogin = (e) => { 
     e.preventDefault();
     const form = e.target;
@@ -17,12 +22,24 @@ const LogIn = () => {
     .then ((result) => { 
       const user = result.user;
       console.log(user);
-      navigate("/")
+      navigate(`${location.state ? location.state : "/"}`)
+      // toast.warn('User Successfully Loged In', {
+      //   position: "top-right",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: false,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   theme: "light",
+      //   });
+      // setTimeout(() => { navigate("/")}, 3000)
     })
     .catch((error) => {
       const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorCode, errorMessage)
+      setError(errorCode)
+      // const errorMessage = error.message;
+      // alert(errorCode, errorMessage)
     });
   }
 
@@ -30,13 +47,14 @@ const LogIn = () => {
     googleLogIn()
     .then(result => { 
       console.log(result)
-      navigate("/")
+      // navigate("/")
     })
     .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorCode, errorMessage)
+      setError(errorCode)
+      // const errorMessage = error.message;
+      // alert(errorCode, errorMessage)
     });
   }
   return (
@@ -84,6 +102,8 @@ const LogIn = () => {
                 Login With Google
               </button>
             </div>
+
+            {error && <p className="text-red-500">{error}</p>}
 
             <button
               type="submit"

@@ -1,19 +1,36 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 const Register = () => {
 
   const {createUser, setUser, googleLogIn, updateUser} = use(AuthContext);
-
+  const [passError, setPassError] = useState("")
   const handleRegister = (e) => { 
     e.preventDefault();
+    const hasUppercase = /[A-Z]/;
+    const hasLowercase = /[a-z]/;
     const form = e.target;
     const name = form.name.value
     const email = form.email.value
     const photo = form.photo.value
     const password = form.password.value
     console.log({name, email, photo, password});
+    if (!hasUppercase.test(password)) {
+      setPassError("password Should has a UpperCase");
+      return;
+    }
+    else{ setPassError("")}
+    if (!hasLowercase.test(password)) {
+      setPassError("password Should has a LowerCase");
+      return;
+    }
+    else{ setPassError("")}
+    if (password.length < 6) {
+      setPassError("password Should be more than 6 character");
+      return;
+    }
+    else{ setPassError("")}
     createUser(email, password)
     .then(result=>{ 
       const user = result.user
@@ -42,8 +59,8 @@ const Register = () => {
     .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorCode, errorMessage)
+      // const errorMessage = error.message;
+      alert(errorCode)
     });
   }
 
@@ -98,6 +115,7 @@ const Register = () => {
                 Register With Google
               </button>
             </div>
+            {passError && <p className="text-red-500">{passError}</p>}
             <button
               type="submit"
               className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white py-3 rounded-md transition font-bold"

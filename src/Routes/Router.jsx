@@ -10,6 +10,7 @@ import Register from "../Pages/Register";
 import AuthLayout from "../Layouts/AuthLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Profile from "../Pages/Profile";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,9 @@ const router = createBrowserRouter([
       },
       { 
         path: "/company-details/:name",
-        element: <CompanyDetails></CompanyDetails>,
+        element: <PrivateRoute>
+          <CompanyDetails></CompanyDetails>
+        </PrivateRoute>,
         loader: () => fetch("/jobData.json"),
       },
     ],
