@@ -24,7 +24,7 @@ const CompanyCard = ({company}) => {
         <h2 className="text-lg font-bold text-gray-900">{name}</h2>
         <p className="text-sm text-gray-600 font-bold"></p>
 
-                  <div className='border-t border-dashed lg:w-[250px] w-[180px] text-gray-600'></div>
+                  <div className='border-t border-dashed  text-gray-600'></div>
 
         <div className="text-sm text-gray-500 font-bold mt-1 flex items-center">
           <span className="mr-1">Industry: </span>

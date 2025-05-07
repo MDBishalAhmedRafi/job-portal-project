@@ -19,7 +19,7 @@ const CompanyDetails = () => {
   };
 
   return (
-    <div className="mx-2 lg:p-6 p-3">
+    <div className="mx-2 lg:p-6">
       <div className="bg-white shadow-lg rounded-2xl p-8 mb-10 flex flex-col md:flex-row items-center gap-6">
         <img src={singleCompany.logo} alt="Company Logo" className="w-32 h-32 object-cover rounded-full border-4 border-[#01a74e]" />
         <div>
@@ -33,14 +33,14 @@ const CompanyDetails = () => {
       </div>
 
       <h2 className="text-3xl font-bold text-center mb-6">Available Jobs</h2>
-      <div className="space-y-6">
+      <div className="lg:space-y-6 space-y-4">
         {singleCompany.jobs.map((job) => (
           <>
           <div className='flex justify-between items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-100 p-6 rounded-xl shadow-md border border-blue-200'>
             <div>
             <img className='lg:w-80 lg:h-48 rounded-2xl' src={job.bannerImage} alt="" />
             </div>
-            <div key={job.id} className=" lg:space-y-3">
+            <div key={job.id} className="space-y-3">
             <h3 className="text-2xl font-bold text-[#01a74e]">{job.title}</h3>
             <p className="lg:text-xl font-bold text-sm text-gray-600">Type: {job.jobType}</p>
             <p className="lg:text-xl font-bold text-sm text-gray-700">💰 Salary: {job.salary}</p>

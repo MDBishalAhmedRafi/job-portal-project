@@ -15,7 +15,7 @@ const CompanySection = ({ companies }) => {
         category and apply for the desire one.
       </p>
     </div>
-    <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
+    <div className='grid lg:grid-cols-4 grid-cols-1 gap-5'>
       { 
         companies.map(company=> <CompanyCard key={company.id} company={company}></CompanyCard>)
       }

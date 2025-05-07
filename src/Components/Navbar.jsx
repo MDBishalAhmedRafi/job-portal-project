@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
+import { AuthContext } from '../Provider/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
+  const {user, logOut} =use(AuthContext);
+  console.log(user);
+  const handleLogOut = () => { 
+    alert("User trying to logout")
+    logOut()
+    .then(() => {
+      // const handleDeleteToast = () => {
+        toast.warn('Lawyer Appointment has been deleted', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+      // }
+    }).catch((error) => {
+      alert(error)
+    });
+  }
                 return (
                                 <div className='lg:w-11/12 lg:mx-auto mx-2'>
                                                 <div className="navbar bg-base-100 shadow-sm">
@@ -19,7 +43,7 @@ const Navbar = () => {
         <li><NavLink to="/contact-us">Contact Us</NavLink></li>
       </ul>
     </div>
-    <a className="text-xl">Job Track</a>
+    <Link to="/" className="text-xl cursor-pointer">Job Track</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -30,8 +54,14 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-3">
-    <Link to="/login" className="btn">Login</Link>
-    <Link to="/register" className="btn">Register</Link>
+    <p>{user && user.email}</p>
+    <img src={user && user.photoURL} alt="" />
+    { 
+      user ? <button onClick={handleLogOut} className='btn'>Logout</button> : <Link to="/auth/login" className="btn">Login</Link>
+    }
+    { 
+      user ? "" : <Link to="/auth/register" className="btn">Register</Link>
+    }
   </div>
 </div>
                                 </div>

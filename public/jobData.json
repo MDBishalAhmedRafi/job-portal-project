@@ -16,6 +16,7 @@
                       "salary": "$67k - $124k",
                       "jobType": "Remote",
                       "description": "Lead a small team of developers in agile workflows.",
+                      "applyLink": "https://www.nike.com/",
                       "requirements": [
                         "Understanding of CI/CD pipelines",
                         "Strong knowledge of Node.js and Express",
@@ -32,6 +33,7 @@
                       "salary": "$95k - $143k",
                       "jobType": "Contract",
                       "description": "Join a collaborative team to build scalable applications.",
+                      "applyLink": "https://www.nike.com/",
                       "requirements": [
                         "Experience with database systems like PostgreSQL or MongoDB",
                         "Familiarity with RESTful APIs",
@@ -59,6 +61,7 @@
                       "salary": "$94k - $145k",
                       "jobType": "Part-time",
                       "description": "Join a collaborative team to build scalable applications.",
+                      "applyLink": "https://www.adidas.com/us",
                       "requirements": [
                         "Familiarity with RESTful APIs",
                         "Excellent problem-solving skills",
@@ -75,6 +78,7 @@
                       "salary": "$95k - $121k",
                       "jobType": "Part-time",
                       "description": "Join a collaborative team to build scalable applications.",
+                      "applyLink": "https://www.adidas.com/us",
                       "requirements": [
                         "Strong knowledge of Node.js and Express",
                         "Understanding of CI/CD pipelines",
@@ -90,7 +94,7 @@
                   "name": "GOOGLE",
                   "logo": "https://i.ibb.co.com/JjCT7xb0/google.png",
                   "location": "Remote",
-                  "website": "https://ecobuild.com",
+                  "website": "https://about.google/",
                   "industry": "Finance",
                   "description": "Google is the world’s leading search engine and a dominant force in internet services and digital technology. Known for products like Gmail, Google Maps, YouTube, and Android, it plays a central role in everyday digital life. Google is also a pioneer in artificial intelligence, cloud computing, and smart technologies.",
                   "jobs": [
@@ -102,6 +106,7 @@
                       "salary": "$98k - $141k",
                       "jobType": "Remote",
                       "description": "Help design and develop new features and services.",
+                      "applyLink": "https://about.google/",
                       "requirements": [
                         "Good understanding of responsive design",
                         "Experience with React or Vue.js",
@@ -118,6 +123,7 @@
                       "salary": "$103k - $156k",
                       "jobType": "Contract",
                       "description": "Help design and develop new features and services.",
+                      "applyLink": "https://about.google/",
                       "requirements": [
                         "Good understanding of responsive design",
                         "Familiarity with RESTful APIs",
@@ -145,6 +151,7 @@
                       "salary": "$99k - $121k",
                       "jobType": "Remote",
                       "description": "Lead a small team of developers in agile workflows.",
+                      "applyLink": "https://www.microsoft.com/en-us/",
                       "requirements": [
                         "Understanding of CI/CD pipelines",
                         "Strong knowledge of Node.js and Express",
@@ -161,6 +168,7 @@
                       "salary": "$64k - $134k",
                       "jobType": "Part-time",
                       "description": "Work on cutting-edge projects with modern tech stacks.",
+                      "applyLink": "https://www.microsoft.com/en-us/",
                       "requirements": [
                         "Proficient in HTML, CSS, and JavaScript",
                         "Experience with database systems like PostgreSQL or MongoDB",
@@ -188,6 +196,7 @@
                       "salary": "$91k - $141k",
                       "jobType": "Remote",
                       "description": "Work on cutting-edge projects with modern tech stacks.",
+                      "applyLink": "https://www.amazon.com/",
                       "requirements": [
                         "Proficient in HTML, CSS, and JavaScript",
                         "Familiarity with RESTful APIs",
@@ -215,6 +224,7 @@
                       "salary": "$130k - $180k",
                       "jobType": "Full-time",
                       "description": "Design and implement scalable cloud infrastructure.",
+                      "applyLink": "https://www.samsung.com/us/",
                       "requirements": [
                         "Hands-on experience with AWS or Azure",
                         "Knowledge of microservices and containerization (Docker/Kubernetes)",
@@ -231,6 +241,7 @@
                       "salary": "$90k - $135k",
                       "jobType": "Remote",
                       "description": "Develop APIs and services for cloud applications.",
+                      "applyLink": "https://www.samsung.com/us/",
                       "requirements": [
                         "Strong knowledge of Node.js or Go",
                         "Experience with PostgreSQL and MongoDB",

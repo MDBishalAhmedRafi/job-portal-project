@@ -7,11 +7,14 @@ import ContactUs from "../Pages/ContactUs";
 import CompanyDetails from "../Components/CompanyDetails";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
+import AuthLayout from "../Layouts/AuthLayout";
+import ErrorPage from "../Pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -35,16 +38,22 @@ const router = createBrowserRouter([
         element: <CompanyDetails></CompanyDetails>,
         loader: () => fetch("/jobData.json"),
       },
-      { 
-        path: "/login",
-        element: <LogIn></LogIn>,
-      },
-      { 
-        path: "/register",
-        element: <Register></Register>
-      }
     ],
   },
+  { 
+    path:"/auth",
+    element: <AuthLayout></AuthLayout>,
+    children: [ 
+      { 
+        path:"/auth/login",
+        element:<LogIn></LogIn>,
+      },
+      { 
+        path:"/auth/register",
+        element:<Register></Register>
+      }
+    ]
+  }
 ]);
 
 export default router;
