@@ -2,12 +2,12 @@ import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from 'react-toastify';
+import mainLogo from "../assets/logo-removebg-preview.png"
 
 const Navbar = () => {
   const {user, logOut} =use(AuthContext);
   console.log(user);
   const handleLogOut = () => { 
-    alert("User trying to logout")
     logOut()
     .then(() => {
       // const handleDeleteToast = () => {
@@ -22,8 +22,17 @@ const Navbar = () => {
           theme: "light",
           });
       // }
-    }).catch((error) => {
-      alert(error)
+    }).catch(() => {
+      toast.warn('There is a problem with loged Out', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     });
   }
                 return (
@@ -43,7 +52,7 @@ const Navbar = () => {
         <li><NavLink to="/contact-us">Contact Us</NavLink></li>
       </ul>
     </div>
-    <Link to="/" className="text-xl cursor-pointer">Job Track</Link>
+    <Link to="/" className="text-xl cursor-pointer"><img className='w-[70px] h-[70px]' src={mainLogo} alt="" /></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -56,7 +65,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end space-x-3">
     {/* <p>{user && user.email}</p> */}
-    <Link to="/profile-page" className='cursor-pointer'><img src={user && user.photoURL} alt="" /></Link>
+    <Link to="/profile-page" className='cursor-pointer'><img className='bg-green-200 rounded-full p-1' src={user && user.photoURL} alt="" /></Link>
     { 
       user ? <button onClick={handleLogOut} className='btn'>Logout</button> : <Link to="/auth/login" className="btn">Login</Link>
     }

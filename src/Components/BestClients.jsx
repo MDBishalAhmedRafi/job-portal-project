@@ -9,8 +9,8 @@ const BestClients = () => {
   return (
     <div className=" bg-gradient-to-r from-green-200 via-blue to-purple-100 lg:p-4 p-2 rounded-2xl">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-red-600">Our Happy Clients</h1>
-        <p className="text-gray-600 mb-7 text-center">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-green-400 to-red-500 bg-clip-text text-transparent text-center">Our Happy Clients</h1>
+        <p className="text-gray-600 mb-5 font-bold text-center">
           They are proudly said that they are preety much happy with our services
         </p>
       </div>

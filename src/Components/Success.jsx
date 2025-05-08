@@ -1,8 +1,4 @@
 import React from "react";
-import doctor from "../assets/success-doctor.png";
-import review from "../assets/success-review.png";
-import other from "../assets/success-patients.png";
-import success from "../assets/success-staffs.png";
 import CountUp from "react-countup";
 const Success = () => {
   return (
@@ -17,41 +13,33 @@ const Success = () => {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col gap-5 justify-around lg:mx-0 mx-30 mt-5">
-        <div className="w-48 h-48 bg-gray-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
-          <div className="text-4xl mb-2">
-            <img src={doctor} alt="" />
-          </div>
+        <div className="w-30 h-30 bg-gradient-to-r from-purple-200 via-red to-blue-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
+          
           <div className="text-3xl font-bold text-gray-900 mb-1">
             <CountUp end={199} duration={5} suffix="+"></CountUp>+
           </div>
-          <div className="text-sm text-gray-600">Total Clients</div>
+          <div className="text-sm text-gray-600 font-bold">Total Clients</div>
         </div>
-        <div className="w-48 h-48 bg-gray-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
-          <div className="text-4xl mb-2">
-            <img src={review} alt="" />
-          </div>
+        <div className="w-30 h-30 bg-gradient-to-r from-purple-200 via-red to-blue-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
+          
           <div className="text-3xl font-bold text-gray-900 mb-1">
-            <CountUp end={467} duration={6} suffix="+"></CountUp>+
+            <CountUp end={450} duration={6} suffix="+"></CountUp>+
           </div>
-          <div className="text-sm text-gray-600">Total Review</div>
+          <div className="text-sm text-gray-600 font-bold">Total Review</div>
         </div>
-        <div className="w-48 h-48 bg-gray-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
-          <div className="text-4xl mb-2">
-            <img src={other} alt="" />
-          </div>
+        <div className="w-30 h-30 bg-gradient-to-r from-purple-200 via-red to-blue-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
+          
           <div className="text-3xl font-bold text-gray-900 mb-1">
-            <CountUp end={1900} duration={7} suffix="+"></CountUp>+
+            <CountUp end={700} duration={7} suffix="+"></CountUp>+
           </div>
-          <div className="text-sm text-gray-600">Job Placement</div>
+          <div className="text-sm text-gray-600 font-bold">Job Placement</div>
         </div>
-        <div className="w-48 h-48 bg-gray-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
-          <div className="text-4xl mb-2">
-            <img src={success} alt="" />
-          </div>
+        <div className="w-30 h-30 bg-gradient-to-r from-purple-200 via-red to-blue-100 rounded-xl  items-center  shadow-sm border border-gray-400 p-5 pt-7">
+    
           <div className="text-3xl font-bold text-gray-900 mb-1">
             <CountUp end={300} duration={6} suffix="+"></CountUp>+
           </div>
-          <div className="text-sm text-gray-600">Team Members</div>
+          <div className="text-sm text-gray-600 font-bold">Team Members</div>
         </div>
       </div>
     </div>

@@ -21,10 +21,10 @@ const steps = [
 
 const HowSection = () => {
   return (
-    <section className="bg-gradient-to-r from-green-100 via-blue to-green-100 py-16 px-6 md:px-20 ">
+    <section className="bg-gradient-to-r from-green-100 via-blue to-green-100 py-16 px-6 md:px-20 rounded-2xl">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 text-red-600">How It Works ?</h2>
-        <p className="text-gray-600 mb-12">Getting your dream job is just a few steps away.</p>
+        <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-green-400 to-red-500 bg-clip-text text-transparent">How It Works ?</h2>
+        <p className="text-gray-600  font-bold mb-7">Getting your dream job is just a few steps away.</p>
 
         <div className="grid md:grid-cols-3 gap-10">
           {steps.map((step, index) => (
@@ -39,8 +39,8 @@ const HowSection = () => {
               <div className="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-red-600">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-blue-600">{step.title}</h3>
+              <p className="text-gray-600 font-bold">{step.description}</p>
             </motion.div>
           ))}
         </div>

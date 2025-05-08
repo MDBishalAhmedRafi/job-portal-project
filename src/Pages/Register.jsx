@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // 👈 Import icons
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, setUser, googleLogIn, updateUser } = use(AuthContext);
@@ -43,36 +44,90 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
+        
+         toast.success('User have Register Successfully', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+                const user =user;
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
+             toast.warn('Profile Updated Successfully', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
             navigate("/")
           })
-          .catch((error) => {
-            alert(error);
+          .catch(() => {
+             toast.warn('There is a problem with update profile', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
             setUser(user);
             
           });
       })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorCode, errorMessage);
+      .catch(() => {
+         toast.warn('There is a problem with register User', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
       });
       
   };
 
   const handleGoogle = () => {
     googleLogIn()
-      .then((result) => {
-        console.log(result);
+      .then(() => {
+        toast.success('User have register with Google', {
+               position: "top-right",
+               autoClose: 5000,
+               hideProgressBar: false,
+               closeOnClick: false,
+               pauseOnHover: true,
+               draggable: true,
+               progress: undefined,
+               theme: "light",
+               });
         navigate("/")
       })
-      .catch((error) => {
-        const errorCode = error.code;
-        alert(errorCode);
+      .catch(() => {
+         toast.warn('There is a problem with Google Register', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
       });
       
   };

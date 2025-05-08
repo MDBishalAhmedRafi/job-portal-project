@@ -204,6 +204,23 @@
                         "Experience with React or Vue.js",
                         "Understanding of CI/CD pipelines"
                       ]
+                    },
+                    {
+                      "id": "7e83cf12-f65d-44f0-9c30-8acdd3245d83",
+                      "title": "Backend Developer",
+                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar6.jpg",
+                      "location": "Chicago, IL",
+                      "salary": "$91k - $141k",
+                      "jobType": "Remote",
+                      "description": "Work on cutting-edge projects with modern tech stacks.",
+                      "applyLink": "https://www.amazon.com/",
+                      "requirements": [
+                        "Proficient in HTML, CSS, and JavaScript",
+                        "Familiarity with RESTful APIs",
+                        "Strong knowledge of Node.js and Express",
+                        "Experience with React or Vue.js",
+                        "Understanding of CI/CD pipelines"
+                      ]
                     }
                   ]
                 },

@@ -3,12 +3,12 @@ import jobImage from "../assets/blog1.jpg"
 const Hero = () => {
                 return (
                                 <div className=''>
-                                     <section className="relative bg-gradient-to-r from-green-100 via-white to-green-100 py-20 overflow-hidden">
+                                     <section className="relative bg-gradient-to-r from-green-100 via-white to-green-100 py-20 overflow-hidden rounded-2xl">
       <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-            Discover Your <span className="text-blue-600">Next Opportunity</span>
+            Discover Your <span className="text-green-600">Next Opportunity</span>
           </h1>
           <p className="mt-6 text-gray-700 text-lg max-w-lg">
             Join thousands of professionals and find the job that fits your skills, values, and career goals.
@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="mt-8">
             <button
               
-              className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg shadow-lg hover:bg-blue-700 transition"
+              className="bg-green-500 cursor-pointer hover:font-bold text-white px-8 py-3 rounded-full text-lg shadow-lg hover:bg-green-700 transition"
             >
               Browse Jobs
             </button>
@@ -30,7 +30,7 @@ const Hero = () => {
           <img
             src={jobImage}
             alt="Job Hunt"
-            className="w-full max-w-md mx-auto lg:mx-0 rounded-3xl shadow-xl"
+            className="w-full  lg:mx-0 rounded-3xl shadow-xl"
           />
         </div>
       </div>
