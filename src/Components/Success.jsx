@@ -6,7 +6,7 @@ import success from "../assets/success-staffs.png";
 import CountUp from "react-countup";
 const Success = () => {
   return (
-    <div className="lg:w-11/12 lg:mx-auto">
+    <div className="w-full bg-gradient-to-r from-green-200 via-blue to-purple-100 rounded-2xl mb-5 lg:p-3">
       <div className="text-center lg:mt-10 m-2 space-y-3">
         <h1 className="font-extrabold text-[#0F0F0F] lg:text-3xl text-2xl">
           We Provide Best Job Portals

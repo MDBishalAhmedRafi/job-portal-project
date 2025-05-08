@@ -1,27 +1,40 @@
 import React from 'react';
-
+import jobImage from "../assets/blog1.jpg"
 const Hero = () => {
                 return (
                                 <div className=''>
-                                     <div
-  className="hero min-h-screen"
-  style={{
-    backgroundImage:
-      "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0BORXT9XjrdRAilszQyLaDW8j_rKxIUS5w&s)",
-  }}
->
-  <div className="hero-overlay"></div>
-  <div className="hero-content text-neutral-content text-center">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button className="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>           
+                                     <section className="relative bg-gradient-to-r from-green-100 via-white to-green-100 py-20 overflow-hidden">
+      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+            Discover Your <span className="text-blue-600">Next Opportunity</span>
+          </h1>
+          <p className="mt-6 text-gray-700 text-lg max-w-lg">
+            Join thousands of professionals and find the job that fits your skills, values, and career goals.
+          </p>
+
+          {/* Call to Action Button */}
+          <div className="mt-8">
+            <button
+              
+              className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg shadow-lg hover:bg-blue-700 transition"
+            >
+              Browse Jobs
+            </button>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="w-full lg:w-1/2 mb-10 lg:mb-0 relative">
+          <img
+            src={jobImage}
+            alt="Job Hunt"
+            className="w-full max-w-md mx-auto lg:mx-0 rounded-3xl shadow-xl"
+          />
+        </div>
+      </div>
+    </section>
                                 </div>
                 );
 };

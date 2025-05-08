@@ -6,7 +6,7 @@ const CompanySection = ({ companies }) => {
   console.log(companies);
   return (
     <>
-    <div>
+    <div className="bg-gradient-to-r from-green-100 via-white to-green-100 ">
       <h1 className="text-4xl font-bold text-red-600 text-center">
         Company Portal
       </h1>
@@ -15,7 +15,7 @@ const CompanySection = ({ companies }) => {
         category and apply for the desire one.
       </p>
     </div>
-    <div className='grid lg:grid-cols-4 grid-cols-1 gap-5'>
+    <div className='grid lg:grid-cols-4 grid-cols-1 gap-5 lg:p-3 bg-gradient-to-r from-purple-100 via-blue to-green-100'>
       { 
         companies.map(company=> <CompanyCard key={company.id} company={company}></CompanyCard>)
       }

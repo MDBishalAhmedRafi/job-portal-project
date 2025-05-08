@@ -11,6 +11,8 @@ import AuthLayout from "../Layouts/AuthLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Profile from "../Pages/Profile";
 import PrivateRoute from "../Provider/PrivateRoute";
+import ForgetPass from "../Pages/ForgetPass";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +39,15 @@ const router = createBrowserRouter([
       },
       { 
         path: "/profile-page",
-        element: <Profile></Profile>
+        element: <PrivateRoute>
+          <Profile></Profile>
+        </PrivateRoute>
+      },
+      { 
+        path: "/update-profile",
+        element:<PrivateRoute>
+          <UpdateProfile></UpdateProfile>,
+        </PrivateRoute>
       },
       { 
         path: "/company-details/:name",
@@ -58,8 +68,12 @@ const router = createBrowserRouter([
       },
       { 
         path:"/auth/register",
-        element:<Register></Register>
-      }
+        element:<Register></Register>,
+      },
+      { 
+        path:"/auth/forget-password",
+        element:<ForgetPass></ForgetPass>,
+      },
     ]
   }
 ]);

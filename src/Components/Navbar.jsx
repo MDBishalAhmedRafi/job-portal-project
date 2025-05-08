@@ -27,8 +27,8 @@ const Navbar = () => {
     });
   }
                 return (
-                                <div className='lg:w-11/12 lg:mx-auto mx-2'>
-                                                <div className="navbar bg-base-100 shadow-sm">
+                                <div className='lg:w-11/12 lg:mx-auto mx-2 '>
+                                                <div className="navbar bg-gradient-to-r from-green-100 via-white to-green-100 shadow-sm mb-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +55,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-3">
-    <p>{user && user.email}</p>
+    {/* <p>{user && user.email}</p> */}
     <Link to="/profile-page" className='cursor-pointer'><img src={user && user.photoURL} alt="" /></Link>
     { 
       user ? <button onClick={handleLogOut} className='btn'>Logout</button> : <Link to="/auth/login" className="btn">Login</Link>

@@ -1,62 +1,64 @@
-import React, { use, useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import React, { use, useRef, useState } from "react";
+import { FaGithub, FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useLocation, useNavigate,  } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const LogIn = () => {
-  const [error, setError] = useState("")
-  const {logIn, googleLogIn} = use(AuthContext);
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false); // 👈 Toggle state for password
+  const { logIn, googleLogIn } = use(AuthContext);
+  const emailRef = useRef();
   const location = useLocation();
-  const navigate = useNavigate()
-  console.log(location)
-  // const navigate = useNavigate()
-  const handleLogin = (e) => { 
+  const navigate = useNavigate();
+
+  const handleForgotPassword = () => {
+    navigate("/auth/forget-password", {
+      state: { email: emailRef.current.value },
+    });
+  };
+
+  const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
     logIn(email, password)
-    .then ((result) => { 
-      const user = result.user;
-      console.log(user);
-      navigate(`${location.state ? location.state : "/"}`)
-      // toast.warn('User Successfully Loged In', {
-      //   position: "top-right",
-      //   autoClose: 5000,
-      //   hideProgressBar: false,
-      //   closeOnClick: false,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "light",
-      //   });
-      // setTimeout(() => { navigate("/")}, 3000)
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      setError(errorCode)
-      // const errorMessage = error.message;
-      // alert(errorCode, errorMessage)
-    });
-  }
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        // navigate(`${location.state ? location.state : "/"}`);
+        navigate( location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        setError(errorCode);
+        toast.warn("Password is Wrong", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      });
+  };
 
-  const handleGoogleLog = () => { 
+  const handleGoogleLog = () => {
     googleLogIn()
-    .then(result => { 
-      console.log(result)
-      // navigate("/")
-    })
-    .catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      setError(errorCode)
-      // const errorMessage = error.message;
-      // alert(errorCode, errorMessage)
-    });
-  }
+      .then(() => {
+        navigate( location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        setError(errorCode);
+      });
+  };
+
   return (
     <div className="lg:w-11/12 lg:mx-auto mx-s">
       <div className="min-h-screen bg-gray-100 flex items-center justify-center rounded-2xl">
@@ -69,42 +71,65 @@ const LogIn = () => {
           </div>
 
           <form onSubmit={handleLogin} className="space-y-4">
-            {/* email */}
+            {/* Email Input */}
             <input
               type="email"
               name="email"
+              ref={emailRef}
               placeholder="Email"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             />
-            {/* password */}
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
 
+            {/* Password Input with Toggle */}
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Password"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 pr-12"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute cursor-pointer right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-800"
+                tabIndex={-1}
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+
+            {/* Remember me & Forgot Password */}
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center space-x-2">
                 <input type="checkbox" className="form-checkbox" />
                 <span className="text-gray-600">Remember me</span>
               </label>
-              <a href="#" className="text-green-600 hover:underline">
-                Forgot Password?
-              </a>
+              <div
+                className="text-green-600 hover:underline cursor-pointer"
+                onClick={handleForgotPassword}
+              >
+                Forget Password?
+              </div>
             </div>
 
+            {/* Google Login */}
             <div className="space-y-3">
-              <button type="button" onClick={handleGoogleLog} className="btn btn-outline btn-secondary w-full">
+              <button
+                type="button"
+                onClick={handleGoogleLog}
+                className="btn btn-outline btn-secondary w-full flex items-center justify-center gap-2"
+              >
                 <FcGoogle size={24} />
                 Login With Google
               </button>
             </div>
 
+            {/* Error Message */}
             {error && <p className="text-red-500">{error}</p>}
 
+            {/* Submit Button */}
             <button
               type="submit"
               className="cursor-pointer w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md transition font-bold"
@@ -115,7 +140,10 @@ const LogIn = () => {
 
           <p className="text-center text-sm text-gray-600 mt-6">
             Don’t you have an account?{" "}
-            <Link to="/auth/register" className="text-green-600 hover:underline">
+            <Link
+              to="/auth/register"
+              className="text-green-600 hover:underline"
+            >
               Register
             </Link>
           </p>

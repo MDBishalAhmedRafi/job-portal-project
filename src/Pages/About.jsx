@@ -7,7 +7,7 @@ import avater3 from "../assets/avater3.jpg"
 const About = () => {
                 return (
                                 <>
-                                <div className='lg:w-11/12 lg:mx-auto mx-2'>
+                                <div className='lg:w-11/12 lg:mx-auto mx-2 bg-gradient-to-r from-blue-200 via-green to-purple-100 mb-5'>
                                 <section className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                                 {/* <!-- Left Images --> */}
                                 <div className="grid grid-cols-2 gap-4">

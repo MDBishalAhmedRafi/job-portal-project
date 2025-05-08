@@ -21,7 +21,7 @@ const steps = [
 
 const HowSection = () => {
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-20">
+    <section className="bg-gradient-to-r from-green-100 via-blue to-green-100 py-16 px-6 md:px-20 ">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4 text-red-600">How It Works ?</h2>
         <p className="text-gray-600 mb-12">Getting your dream job is just a few steps away.</p>

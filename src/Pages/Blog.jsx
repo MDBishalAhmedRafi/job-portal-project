@@ -4,12 +4,12 @@ import blog2 from "../assets/blog2.jpg"
 import blog3 from "../assets/blog3.jpg"
 const Blog = () => {
                 return (
-                                <div className='lg:w-11/12 lg:mx-auto mx-2 lg:space-y-8 space-y-5'>
+                                <div className='lg:w-11/12 lg:mx-auto mx-2 lg:space-y-8 space-y-5 mb-5'>
 
 {/* blog 01 */}
-<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden bg-gradient-to-r from-green-200 via-blue to-purple-100">
       {/* Image with Date Badge */}
-      <div className="relative">
+      <div className="relative lg:p-3">
         <img
           src={blog1} // Update with actual image path
           alt="Discussion"
@@ -24,7 +24,7 @@ const Blog = () => {
       </div>
 
       {/* Content */}
-      <div className="p-6 mt-5 ">
+      <div className="p-6 mt-5 rounded-2xl">
         {/* Meta Info */}
         <div className="flex items-center text-sm text-gray-500 mb-3 space-x-4">
           <span>📄 03 Comments</span>
@@ -46,9 +46,9 @@ const Blog = () => {
       </div>
     </div>
  {/* blog 02 */}
-<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden bg-gradient-to-r from-green-200 via-blue to-purple-100">
       {/* Image with Date Badge */}
-      <div className="relative">
+      <div className="relative lg:p-3">
         <img
           src={blog2} // Update with actual image path
           alt="Discussion"
@@ -63,7 +63,7 @@ const Blog = () => {
       </div>
 
       {/* Content */}
-      <div className="p-6 mt-5 ">
+      <div className="p-6 mt-5 rounded-2xl">
         {/* Meta Info */}
         <div className="flex items-center text-sm text-gray-500 mb-3 space-x-4">
           <span>📄 05 Comments</span>
@@ -82,9 +82,9 @@ const Blog = () => {
       </div>
     </div>
     {/* blog 03 */}
-<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+<div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden bg-gradient-to-r from-green-200 via-blue to-purple-100">
       {/* Image with Date Badge */}
-      <div className="relative">
+      <div className="relative lg:p-3">
         <img
           src={blog3} // Update with actual image path
           alt="Discussion"
