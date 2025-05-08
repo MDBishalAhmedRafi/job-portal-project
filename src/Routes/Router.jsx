@@ -13,6 +13,7 @@ import Profile from "../Pages/Profile";
 import PrivateRoute from "../Provider/PrivateRoute";
 import ForgetPass from "../Pages/ForgetPass";
 import UpdateProfile from "../Pages/UpdateProfile";
+import Loading from "../Pages/Loading";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch("/jobData.json"),
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "/jobs",
@@ -55,7 +57,7 @@ const router = createBrowserRouter([
           <CompanyDetails></CompanyDetails>
         </PrivateRoute>,
         loader: () => fetch("/jobData.json"),
-      },
+        hydrateFallbackElement: <Loading></Loading>,      },
     ],
   },
   { 

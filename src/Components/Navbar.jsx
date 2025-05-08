@@ -23,20 +23,11 @@ const Navbar = () => {
           });
       // }
     }).catch(() => {
-      toast.warn('There is a problem with loged Out', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+      
     });
   }
                 return (
-                                <div className='lg:w-11/12 lg:mx-auto mx-2 '>
+                                <div className='lg:w-11/12 lg:mx-auto mx-2'>
                                                 <div className="navbar bg-gradient-to-r from-green-100 via-white to-green-100 shadow-sm mb-5">
   <div className="navbar-start">
     <div className="dropdown">

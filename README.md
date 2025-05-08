@@ -1,12 +1,33 @@
-# React + Vite
+# 💼 Job Portal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, user-friendly job portal built with **React**, **Tailwind CSS**, and **Framer Motion** where job seekers can discover new opportunities and employers can connect with skilled professionals.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Browse and filter job listings
+- 🧠 Intuitive and mobile-responsive design
+- ⚡ Fast loading with Vite
+- 🎨 Styled using Tailwind CSS and DaisyUI
+- 🎥 Smooth animations using Framer Motion
+- 🌐 Dynamic document titles via React Helmet
+- 🔄 Client-side routing with React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Component-based UI library
+- **React Router DOM** – For navigation and routing
+- **Tailwind CSS** – Utility-first CSS framework
+- **DaisyUI** – Tailwind-based UI components
+- **Framer Motion** – Declarative animations in React
+- **React Helmet** – Manage metadata and page titles
+- **Vite** – Fast and modern build tool
+- **JavaScript (ES6+)** – Language used throughout the project
+
+---
+
+## 📁 Folder Structure
+

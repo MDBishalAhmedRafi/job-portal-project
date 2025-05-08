@@ -2,7 +2,7 @@
                 {
                   "id": "1",
                   "name": "NIKE",
-                  "logo": "https://i.ibb.co.com/93T1Dvx8/nike.png",
+                  "logo": "https://i.ibb.co.com/4n3x4jW5/nike.png",
                   "location": "Remote",
                   "website": "https://www.nike.com/",
                   "industry": "Healthcare",
@@ -11,7 +11,7 @@
                     {
                       "id": "7bfa1bb1-5c6a-412f-ae8f-1a3104e33838",
                       "title": "DevOps Engineer",
-                      "bannerImage": "https://i.ibb.co.com/zV5DKzFh/banar8.jpg",
+                      "bannerImage": "https://i.ibb.co.com/Rkv9R68T/banar1.jpg",
                       "location": "Chicago, IL",
                       "salary": "$67k - $124k",
                       "jobType": "Remote",
@@ -28,7 +28,7 @@
                     {
                       "id": "dc161b04-bd04-4026-b3ec-455bdb92dfb5",
                       "title": "Project Manager",
-                      "bannerImage": "https://i.ibb.co.com/cXsSvGs1/banar5.jpg",
+                      "bannerImage": "https://i.ibb.co.com/fdVk1RqQ/banar2.jpg",
                       "location": "San Francisco, CA",
                       "salary": "$95k - $143k",
                       "jobType": "Contract",
@@ -47,7 +47,7 @@
                 {
                   "id": "2",
                   "name": "ADIDAS",
-                  "logo": "https://i.ibb.co.com/BV6KMM27/Adidas.png",
+                  "logo": "https://i.ibb.co.com/TMszZZjx/Adidas.png",
                   "location": "Remote",
                   "website": "https://www.adidas.com/us",
                   "industry": "Cybersecurity",
@@ -56,7 +56,7 @@
                     {
                       "id": "0e432c66-f70e-4650-a337-f68f1981b2c3",
                       "title": "Frontend Developer",
-                      "bannerImage": "https://i.ibb.co.com/9Hzr437K/banar7.jpg",
+                      "bannerImage": "https://i.ibb.co.com/1t7nN6HZ/banar3.jpg",
                       "location": "Chicago, IL",
                       "salary": "$94k - $145k",
                       "jobType": "Part-time",
@@ -73,7 +73,7 @@
                     {
                       "id": "0b587f0b-9a77-45fc-b365-45d93fef9f2d",
                       "title": "Product Manager",
-                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar3.jpg",
+                      "bannerImage": "https://i.ibb.co.com/j9kswBJZ/banar4.jpg",
                       "location": "Boston, MA",
                       "salary": "$95k - $121k",
                       "jobType": "Part-time",
@@ -92,7 +92,7 @@
                 {
                   "id": "3",
                   "name": "GOOGLE",
-                  "logo": "https://i.ibb.co.com/JjCT7xb0/google.png",
+                  "logo": "https://i.ibb.co.com/6JW8ZH3T/google.png",
                   "location": "Remote",
                   "website": "https://about.google/",
                   "industry": "Finance",
@@ -101,7 +101,7 @@
                     {
                       "id": "8d8bc3c2-36d4-470a-b2d0-6f5b05e3b225",
                       "title": "QA Tester",
-                      "bannerImage": "https://i.ibb.co.com/cXsSvGs1/banar5.jpg",
+                      "bannerImage": "https://i.ibb.co.com/j9PKprZm/banar5.jpg",
                       "location": "Remote",
                       "salary": "$98k - $141k",
                       "jobType": "Remote",
@@ -118,7 +118,7 @@
                     {
                       "id": "7230c3f7-9c4f-46cc-b4b0-d315a9cecf73",
                       "title": "Backend Engineer",
-                      "bannerImage": "https://i.ibb.co.com/HLPwC6Tm/banar6.jpg",
+                      "bannerImage": "https://i.ibb.co.com/1t7nN6HZ/banar3.jpg",
                       "location": "Boston, MA",
                       "salary": "$103k - $156k",
                       "jobType": "Contract",
@@ -137,7 +137,7 @@
                 {
                   "id": "4",
                   "name": "MICROSOFT",
-                  "logo": "https://i.ibb.co.com/DfqN6mr0/micro.png",
+                  "logo": "https://i.ibb.co.com/LXGC341m/micro.png",
                   "location": "New York, NY",
                   "website": "https://www.microsoft.com/en-us/",
                   "industry": "Education",
@@ -146,7 +146,7 @@
                     {
                       "id": "26d7b6ee-93b3-42cb-8d25-ea180cd94c15",
                       "title": "DevOps Engineer",
-                      "bannerImage": "https://i.ibb.co.com/CpF76zgQ/banar4.jpg",
+                      "bannerImage": "https://i.ibb.co.com/6RfX5X9m/banar6.jpg",
                       "location": "Remote",
                       "salary": "$99k - $121k",
                       "jobType": "Remote",
@@ -163,7 +163,7 @@
                     {
                       "id": "ad8e3a4e-b373-437a-b6e1-820a74f2d142",
                       "title": "Product Manager",
-                      "bannerImage": "https://i.ibb.co.com/YrgNB76/banar1.jpg",
+                      "bannerImage": "https://i.ibb.co.com/Rkv9R68T/banar1.jpg",
                       "location": "Seattle, WA",
                       "salary": "$64k - $134k",
                       "jobType": "Part-time",
@@ -182,7 +182,7 @@
                 {
                   "id": "5",
                   "name": "AMAZON",
-                  "logo": "https://i.ibb.co.com/9Hjr5m7n/amazone.png",
+                  "logo": "https://i.ibb.co.com/HDyd1jty/amazone.png",
                   "location": "San Francisco, CA",
                   "website": "https://www.amazon.com/",
                   "industry": "Logistics",
@@ -191,7 +191,7 @@
                     {
                       "id": "7e83cf12-f65d-44f0-9c30-8acdd3245d83",
                       "title": "Frontend Developer",
-                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar3.jpg",
+                      "bannerImage": "https://i.ibb.co.com/nqzLGxFG/banar7.jpg",
                       "location": "Chicago, IL",
                       "salary": "$91k - $141k",
                       "jobType": "Remote",
@@ -208,7 +208,7 @@
                     {
                       "id": "7e83cf12-f65d-44f0-9c30-8acdd3245d83",
                       "title": "Backend Developer",
-                      "bannerImage": "https://i.ibb.co.com/8DdKV4bz/banar6.jpg",
+                      "bannerImage": "https://i.ibb.co.com/TZsztKB/banar8.jpg",
                       "location": "Chicago, IL",
                       "salary": "$91k - $141k",
                       "jobType": "Remote",
@@ -227,7 +227,7 @@
                 {
                   "id": "6",
                   "name": "SAMSUNG",
-                  "logo": "https://i.ibb.co.com/LdGH5rt5/samsung.png",
+                  "logo": "https://i.ibb.co.com/Tqqt1gJ4/samsung.png",
                   "location": "Austin, TX",
                   "website": "https://www.samsung.com/us/",
                   "industry": "Cloud Computing",
@@ -236,7 +236,7 @@
                     {
                       "id": "af47e125-2024-43ff-9f8c-4b51481d6d77",
                       "title": "Cloud Solutions Architect",
-                      "bannerImage": "https://i.ibb.co.com/YrgNB76/banar1.jpg",
+                      "bannerImage": "https://i.ibb.co.com/6RfX5X9m/banar6.jpg",
                       "location": "Austin, TX",
                       "salary": "$130k - $180k",
                       "jobType": "Full-time",
@@ -253,7 +253,7 @@
                     {
                       "id": "c1d6edc3-23e4-4b67-9ed6-13a5c23f2064",
                       "title": "Backend Developer",
-                      "bannerImage": "https://i.ibb.co.com/CKzRxphv/banar2.jpg",
+                      "bannerImage": "https://i.ibb.co.com/fdVk1RqQ/banar2.jpg",
                       "location": "Remote",
                       "salary": "$90k - $135k",
                       "jobType": "Remote",

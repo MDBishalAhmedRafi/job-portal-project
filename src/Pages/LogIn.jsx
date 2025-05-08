@@ -24,11 +24,10 @@ const LogIn = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     logIn(email, password)
       .then(() => {
         // navigate(`${location.state ? location.state : "/"}`);
-        navigate( location?.state ? location.state : "/")
         toast.success('User has Successfully Log In', {
           position: "top-right",
           autoClose: 5000,
@@ -39,6 +38,8 @@ const LogIn = () => {
           progress: undefined,
           theme: "light",
           });
+        navigate( location?.state ? location.state : "/")
+        
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -59,31 +60,13 @@ const LogIn = () => {
   const handleGoogleLog = () => {
     googleLogIn()
       .then(() => {
-         toast.success('User has successfully log in with Google', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+        
         navigate( location?.state ? location.state : "/")
       })
       .catch((error) => {
         const errorCode = error.code;
         setError(errorCode);
-         toast.warn('There is a problem in Google Log In', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+        
       });
   };
 

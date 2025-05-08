@@ -11,7 +11,7 @@ const ErrorPage = () => {
                                         <img className='lg:w-3xs w-2xs' src={errorImage} alt="" />
                                         </div>
                                          <div className='lg:mt-10 mt-5 space-y-2'>
-                                         <h1 className='text-pink-400 font-bold lg:text-3xl'>404 Page Not Found</h1>
+                                         <h1 className='text-red-600 font-bold lg:text-3xl'>404 Page Not Found</h1>
                                          <p className='font-bold lg:text-xl'>Oops! The page you're looking for doesn't exist.</p>
                                          <Link to='/'><button className="btn bg-[#0EA106] rounded-xl font-bold text-white">Go Back Home</button></Link>
                                                 </div>      

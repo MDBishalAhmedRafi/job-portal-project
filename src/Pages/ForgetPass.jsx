@@ -1,31 +1,49 @@
 import React, { use, useRef, } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation } from 'react-router';
+import { toast } from 'react-toastify';
 
 const ForgetPass = () => {
                 const location = useLocation();
-                console.log(location) 
+                // console.log(location) 
                  const {forgetPass} =use(AuthContext);
                  const emailRef = useRef();
                  const handleForgetPass = (e) => { 
                                 e.preventDefault()
                                 const email = emailRef.current.value;
-                                console.log(email)
+                                // console.log(email)
                                 forgetPass(email)
                                 .then(() => {
-                                  alert("password reset email is sent")
+                                 toast.success('Please Check Your Email to Reset password', {
+                                           position: "top-right",
+                                           autoClose: 5000,
+                                           hideProgressBar: false,
+                                           closeOnClick: false,
+                                           pauseOnHover: true,
+                                           draggable: true,
+                                           progress: undefined,
+                                           theme: "light",
+                                           });
                                   // ..
                                 })
-                                .catch((error) => {
-                                  const errorCode = error.code;
-                                  alert(errorCode)
+                                .catch(() => {
+                                  toast.warn('There is a problem with reset password', {
+                                            position: "top-right",
+                                            autoClose: 5000,
+                                            hideProgressBar: false,
+                                            closeOnClick: false,
+                                            pauseOnHover: true,
+                                            draggable: true,
+                                            progress: undefined,
+                                            theme: "light",
+                                            });
                                   // ..
                                 });
                               }
                 return (
                                 <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
                                 <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-lg">
-                                  <h2 className="text-3xl font-bold mb-6 text-center text-blue-700">
+                                  <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-blue-500 via-green-400 to-red-500 bg-clip-text text-transparent">
                                     Forgot Password
                                   </h2>
                           
@@ -37,7 +55,7 @@ const ForgetPass = () => {
                                       type="email"
                                       ref={emailRef}
                                       defaultValue={location.state.email}
-                                      className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                      className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
                                       placeholder="you@example.com"
                                       
                                     />
@@ -45,7 +63,7 @@ const ForgetPass = () => {
                                     <button
                                     
                                       type="submit"
-                                      className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+                                      className="w-full bg-green-600 text-white font-bold py-2 rounded-lg hover:bg-green-700 transition duration-200"
                                     >
                                       Reset Password
                                     </button>

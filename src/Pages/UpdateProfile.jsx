@@ -11,7 +11,7 @@ const UpdateProfile = () => {
     const form = e.target;
     const photo = form.photo.value;
     const name = form.name.value;
-    console.log({photo, name})
+    // console.log({photo, name})
     const obj = {displayName: name, photoURL: photo}
     updateUser(obj).then(() => {
       toast.success("Profile Updated Successfully", {
@@ -30,9 +30,17 @@ const UpdateProfile = () => {
         photoUrl: photo 
       }));
   })
-  .catch((error) => {
-    const errorCode = error.code;
-  alert(errorCode)})
+  .catch(() => {
+    toast.success("There is a problem with update Profile", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });})
 }
                 return (
                                 <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-blue-100 p-6 lg:w-11/12 lg:mx-auto mx-2">

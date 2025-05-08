@@ -9,7 +9,7 @@ const AuthProvider = ({children}) => {
                 const provider = new GoogleAuthProvider()
                 const [user, setUser] = useState(null);
                 const [loading, setLoading] = useState(true)
-                console.log(loading, user);
+                // console.log(loading, user);
                 
                 const createUser = (email, password) => { 
                                 setLoading(true);
@@ -42,11 +42,12 @@ const AuthProvider = ({children}) => {
                                 const usSubscribe = onAuthStateChanged(auth, (currentUser) => { 
                                                 setUser(currentUser);
                                                 setLoading(false)
-                                                return () => { 
-                                                                usSubscribe();
-                                                                
-                                                }
+                                                
                                 })
+                                return () => { 
+                                                usSubscribe();
+                                                
+                                }
                 }, [])
                 const authData = { 
                 user,

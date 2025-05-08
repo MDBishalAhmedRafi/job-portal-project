@@ -6,7 +6,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa"; // 👈 Import icons
 import { toast } from "react-toastify";
 
 const Register = () => {
-  const { createUser, setUser, googleLogIn, updateUser } = use(AuthContext);
+  const {user, createUser, setUser, googleLogIn, updateUser } = use(AuthContext);
   const [passError, setPassError] = useState("");
   const [showPassword, setShowPassword] = useState(false); 
   const navigate = useNavigate()
@@ -45,8 +45,7 @@ const Register = () => {
 
     createUser(email, password)
       .then(() => {
-        
-         toast.success('User have Register Successfully', {
+        toast.success('User have Register Successfully', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -56,38 +55,21 @@ const Register = () => {
                 progress: undefined,
                 theme: "light",
                 });
-                const user =user;
+                // const user =user;
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
-             toast.warn('Profile Updated Successfully', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                    });
+             
             navigate("/")
           })
           .catch(() => {
-             toast.warn('There is a problem with update profile', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                    });
+             
             setUser(user);
             
           });
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error)
          toast.warn('There is a problem with register User', {
                 position: "top-right",
                 autoClose: 5000,
@@ -105,29 +87,11 @@ const Register = () => {
   const handleGoogle = () => {
     googleLogIn()
       .then(() => {
-        toast.success('User have register with Google', {
-               position: "top-right",
-               autoClose: 5000,
-               hideProgressBar: false,
-               closeOnClick: false,
-               pauseOnHover: true,
-               draggable: true,
-               progress: undefined,
-               theme: "light",
-               });
+       
         navigate("/")
       })
       .catch(() => {
-         toast.warn('There is a problem with Google Register', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+        
       });
       
   };
