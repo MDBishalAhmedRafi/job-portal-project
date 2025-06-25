@@ -27,11 +27,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> *(You can add screenshots or a short demo GIF here to visualize the project)*
-
----
 
 ## 🔧 Installation & Setup
 
